@@ -17,29 +17,37 @@ and open the template in the editor.
             }
             p {
                 text-align: center
-                    
+
             }
-            
+
         </style>
     </head>
     <body>
         <p>
             You logged in successfully
         </p>
-        <form action="Door.php" method="post">
-            Brugernavn:<input type="text" name="bnavn" placeholder="Brugernavn" required> <br>
-            E-mail:<input type="text" name="email" placeholder="E-mail"> <br>
-            Besked:<input type="text" name="besked" width="200" height="200" placeholder="Besked" required style="width: 300px; height: 300px; text-align: top;"> <br>
-            Adresse:<input type="text" name="add" placeholder="Addresse" required> <br>
-            Mobil Nummer:<input type="text" name="nr" placeholder="Mobil nummer" required> <br>
+        <form action="BarryTheBartender.php" method="post">
+            Brugernavn:<input type="text" name="bnavn" id="bnavn" placeholder="Brugernavn" required> <br>
+            E-mail:<input type="text" name="email" id="email" placeholder="E-mail"> <br>
+            Besked:<input type="text" name="besked" id="Besked" width="200" height="200" placeholder="Besked" required style="width: 300px; height: 300px; text-align: top;"> <br>
+            Adresse:<input type="text" name="add" id="add" placeholder="Addresse" required> <br>
+            Mobil Nummer:<input type="text" name="nr" id="nr" placeholder="Mobil nummer" required> <br>
+
+            <button type="submit">Save</button>
+            <button type="reset">Reset</button>
             
-            <button type="Save">Save</button>
-            <button type="Reset">Reset</button>
-            <button type="Delete all messages">Delete all messages</button>
-            <button type="Read all messages">Read all messages</button>
-            <button type="Log ud">Log ud</button>
+        </form>
+        <form action="Showlove.php">
+        <button type="Read all messages">Read all messages</button>
+        </form>
+        <form action="FireTheLazer.php">
+        <button type="submit">Delete all messages</button>
+        </form>
+        <form action="Door.php">
+        <button type="submit">Log ud</button>
         </form>
         <?php
+
         session_start();
         error_reporting(0);
         $bnavn = $_POST['Brugernavn'];
@@ -47,6 +55,9 @@ and open the template in the editor.
         $besked = $_POST['Besked'] ;
         $add = $_POST['add'] ;
         $nr = $_POST['nr'];
+
+
+
         ?>
     </body>
 </html>

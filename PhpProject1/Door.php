@@ -28,18 +28,18 @@ and open the template in the editor.
             <h1>Fælles Forum</h1>
             <h2>Indtast brugernavn og adgangskode</h2>
         </header>
-        
+
         <br>
-        
+
         <div id='First'>
             <form id="Bob" action="BobTheBouncer.php" method="post">
-            
+
                 <label for="Brugernavn">Brugernavn:</label>
                     <br>
                 <input name="Brugernavn" type="brugernavn" id="Brugernavn">
-            
+
                     <br>
-            
+
                 <label for="Adgangskode">Adgangskode:</label>
                     <br>
                 <input name="Adgangskode" type="Password" id="Adgangskode">
